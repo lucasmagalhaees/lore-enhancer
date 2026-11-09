@@ -14,6 +14,7 @@ Idioma: respostas e textos em português do Brasil, informal. Comentários no c�
 
 | Arquivo | O que faz |
 |---|---|
+| `index.py` | Entrada do Vercel: só reexporta o `app` de `app/main.py` (o Vercel acha o FastAPI sozinho, sem `vercel.json`) |
 | `app/main.py` | FastAPI: `GET /health`, `GET /lore`, `GET /fragments`, `POST /ingest` (só com login do Supabase) |
 | `app/compose.py` | `compose`: escolhe um molde do momento e preenche as lacunas com trechos do deus (depois os gerais); `tidy` junta preposições e põe maiúscula |
 | `app/store.py` | `MemoryStore` (testes, local) e `SupabaseStore` (REST do Supabase com a chave de serviço) |

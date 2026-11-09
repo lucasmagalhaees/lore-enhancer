@@ -49,6 +49,18 @@ class Batch(BaseModel):
     templates: list[Template] = []
 
 
+@app.exception_handler(404)
+async def not_found(request, exc):
+    # Says which path reached the app: on Vercel a rewrite or a prefix can change it
+    from fastapi.responses import JSONResponse
+    return JSONResponse({'detail': getattr(exc, 'detail', 'Not Found'), 'path': request.url.path, 'root_path': request.scope.get('root_path', '')}, status_code=404)
+
+
+@app.get('/')
+def root() -> dict:
+    return {'name': 'lore-enhancer', 'version': VERSION, 'see': ['/health', '/lore', '/fragments', '/docs']}
+
+
 @app.get('/health')
 def health(s: Store = Depends(store)) -> dict:
     return {'ok': True, 'version': VERSION, 'store': type(s).__name__}
