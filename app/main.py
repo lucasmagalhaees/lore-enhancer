@@ -9,6 +9,9 @@ from .store import Store, from_env
 
 VERSION = '0.1.0'
 app = FastAPI(title='lore-enhancer', version=VERSION)
+# The games call /lore straight from the browser: reading is open to any site, writing (/ingest) still needs the login
+from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
+app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_methods=['GET'], allow_headers=[])
 _store: Store = from_env()
 
 
