@@ -1,0 +1,132 @@
+[
+ {
+  "campaign": "secret-cultist",
+  "moment": "abertura",
+  "text": "Vocês chegam a {lugar}. Logo na primeira noite, {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "abertura",
+  "text": "Ninguém quis vir até {lugar}, mas todos vieram. {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "abertura",
+  "text": "Alguém deixou {objeto} na porta de vocês. Num bilhete: “{sussurro}”."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-L",
+  "text": "{pres} e {chanc} voltam com mais um pedaço da Lança. {reliquia}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-L",
+  "text": "Mais uma relíquia, trazida por {pres} e {chanc}. Lá fora, alguém para de cantar."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-L",
+  "text": "{chanc} guarda a relíquia. Por uma noite, {lugar} fica em silêncio."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-F",
+  "text": "Sob {pres} e {chanc}, mais uma página foi lida. {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-F",
+  "text": "{chanc} vira a página, e a tinta ainda está fresca. Alguém sussurra: “{sussurro}”."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-F",
+  "text": "Mais uma página do Necronomicon. Em {lugar}, {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "rejeicao",
+  "text": "A mesa não confia em {pres} e {chanc}. Enquanto discutem, {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "rejeicao",
+  "text": "Governo recusado. Cada minuto perdido é um minuto a mais para o culto."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "caos",
+  "text": "Ninguém governa, e a cidade se governa sozinha. {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "caos",
+  "text": "Sem governo, {objeto} passa de mão em mão até alguém ler o que não devia."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "veto",
+  "text": "{pres} e {chanc} rasgam as duas folhas. Nem relíquia, nem página: só medo."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "investigacao",
+  "text": "{pres} chama {target} para uma conversa a portas fechadas, em {lugar}. Só um dos dois sai sabendo a verdade."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "investigacao",
+  "text": "{pres} revira os papéis de {target} e acha {objeto}. O que isso quer dizer, só {pres} sabe."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "eliminacao",
+  "text": "{pres} decide, e {target} não volta para a mesa. {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "eliminacao",
+  "text": "{target} cai em {lugar}. Ninguém sabe ainda se a mesa ficou mais segura."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "ato2",
+  "text": "A coisa toda fica pior. {pressagio}, e alguém escreveu na parede: “{sussurro}”."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "ato2",
+  "text": "“{citacao}”"
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "ato3",
+  "text": "Falta pouco. Em {lugar}, o culto já acende as velas. “{sussurro}”."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "ato3",
+  "text": "“{citacao}” As palavras estão em todas as bocas."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "fim-L",
+  "text": "A última relíquia volta para o lugar. Em {lugar}, o silêncio dura até o amanhecer."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "fim-L",
+  "text": "“{citacao}” Desta vez, as trevas recuam."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "fim-F",
+  "text": "O ritual termina em {lugar}. {pressagio}, e não vai parar mais."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "fim-F",
+  "text": "A última página é lida em voz alta: “{sussurro}”."
+ }
+]

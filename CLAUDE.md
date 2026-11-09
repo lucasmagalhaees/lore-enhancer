@@ -1,0 +1,33 @@
+# lore-enhancer
+
+API de lore para jogos de mesa (Secret Cultist e os outros temas do secret-game): trechos etiquetados por campanha, área, deus, momento e tipo, e frases montadas por moldes. **Sem modelo de linguagem** (D2): é busca por etiqueta e recombinação.
+
+Idioma: respostas e textos em português do Brasil, informal. Comentários no código: inglês.
+
+## Fluxo (obrigatório)
+
+1. Nunca commitar na `main`: branch a partir da `main` atualizada (`feat/`, `fix/`, `docs/`, `chore/`) e PR.
+2. Rodar `scripts/verify.sh` antes de enviar e colar a saída no PR.
+3. Commits em Conventional Commits, em português.
+
+## Peças
+
+| Arquivo | O que faz |
+|---|---|
+| `app/main.py` | FastAPI: `GET /health`, `GET /lore`, `GET /fragments`, `POST /ingest` (só com login do Supabase) |
+| `app/compose.py` | `compose`: escolhe um molde do momento e preenche as lacunas com trechos do deus (depois os gerais); `tidy` junta preposições e põe maiúscula |
+| `app/store.py` | `MemoryStore` (testes, local) e `SupabaseStore` (REST do Supabase com a chave de serviço) |
+| `corpus/build.py` | O corpus como dados; gera `corpus/fragments.json` e `corpus/templates.json` |
+| `scripts/seed_sql.py` | Gera `sql/seed.sql` do corpus (colar uma vez no SQL Editor) |
+| `scripts/ingest.py` | Manda o corpus ao Supabase; roda no workflow `ingestão` depois do merge |
+| `sql/schema.sql` | Tabelas `fragment` e `template`, busca de texto em português, coluna `embedding` vazia |
+
+## Regras do corpus
+
+- Só domínio público ou texto original. Toda citação diz a obra e o ano, e a tradução é nossa (`source`, `source_date` com a data em que o domínio público foi conferido). Fora: Chaosium (o RPG), August Derleth, Clark Ashton Smith (protegido no Brasil até 2032) e qualquer tradução moderna protegida.
+- Mudou `corpus/build.py`: rode `scripts/verify.sh`, que regenera os JSON e o `sql/seed.sql`; commite os gerados juntos.
+- Todo deus tem presságio, lugar, objeto e sussurro, e todo momento compõe para todo deus sem lacuna (os testes conferem).
+
+## Configuração (no Vercel e nos secrets do GitHub)
+
+`SUPABASE_URL` (https://ydzqrfkcsrochzwegrig.supabase.co), `SUPABASE_SERVICE_KEY` (só no servidor), `SUPABASE_ANON_KEY` (para conferir o login do `/ingest`). Sem elas a API usa a memória, vazia. Nunca colar chave no chat ou no código.
