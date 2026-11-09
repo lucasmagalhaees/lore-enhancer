@@ -49,7 +49,8 @@ class SupabaseStore:
 
     def __init__(self, url: str, key: str) -> None:
         self.base = url.rstrip('/') + '/rest/v1'
-        self.h = {'apikey': key, 'authorization': f'Bearer {key}'}
+        # New keys (sb_secret_...) go only in apikey; a legacy service_role JWT also goes as the bearer
+        self.h = {'apikey': key, **({'authorization': f'Bearer {key}'} if key.startswith('eyJ') else {})}
 
     def _post(self, table: str, rows: list[Row], conflict: str) -> int:
         if not rows:
@@ -84,5 +85,5 @@ class SupabaseStore:
 
 
 def from_env() -> Store:
-    url, key = os.environ.get('SUPABASE_URL'), os.environ.get('SUPABASE_SERVICE_KEY')
+    url, key = os.environ.get('SUPABASE_URL'), os.environ.get('SUPABASE_SECRET_KEY') or os.environ.get('SUPABASE_SERVICE_KEY')
     return SupabaseStore(url, key) if url and key else MemoryStore()

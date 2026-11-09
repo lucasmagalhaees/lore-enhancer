@@ -30,4 +30,4 @@ Idioma: respostas e textos em português do Brasil, informal. Comentários no c�
 
 ## Configuração (no Vercel e nos secrets do GitHub)
 
-`SUPABASE_URL` (https://ydzqrfkcsrochzwegrig.supabase.co), `SUPABASE_SERVICE_KEY` (só no servidor), `SUPABASE_ANON_KEY` (para conferir o login do `/ingest`). Sem elas a API usa a memória, vazia. Nunca colar chave no chat ou no código.
+`SUPABASE_URL` (https://ydzqrfkcsrochzwegrig.supabase.co), `SUPABASE_SECRET_KEY` (a chave secreta `sb_secret_…`, só no servidor), `SUPABASE_PUBLISHABLE_KEY` (a `sb_publishable_…`, para conferir o login do `/ingest`); as antigas `SUPABASE_SERVICE_KEY`/`SUPABASE_ANON_KEY` também valem. Sem elas a API usa a memória, vazia. Nunca colar chave no chat ou no código.

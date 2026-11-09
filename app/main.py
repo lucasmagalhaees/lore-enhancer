@@ -18,7 +18,7 @@ def store() -> Store:
 
 def who(authorization: str = Header(default='')) -> str:
     """Only a user of the Supabase project may ingest: asks Supabase who the token belongs to."""
-    url, anon = os.environ.get('SUPABASE_URL'), os.environ.get('SUPABASE_ANON_KEY')
+    url, anon = os.environ.get('SUPABASE_URL'), os.environ.get('SUPABASE_PUBLISHABLE_KEY') or os.environ.get('SUPABASE_ANON_KEY')
     if not authorization.lower().startswith('bearer ') or not url or not anon:
         raise HTTPException(401, 'login do Supabase obrigatório')
     r = httpx.get(url.rstrip('/') + '/auth/v1/user', headers={'apikey': anon, 'authorization': authorization}, timeout=10)
