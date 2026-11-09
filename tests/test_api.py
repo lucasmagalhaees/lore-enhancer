@@ -111,3 +111,8 @@ def test_a_quote_made_for_the_moment_beats_a_general_one(store):
     lines = {compose(store, 'secret-cultist', 'rejeicao', 'cthulhu', seed=s, names=NAMES)['text'] for s in range(30)}
     quoted = [l for l in lines if l.startswith('“')]
     assert out and quoted and all(('trai' in l) for l in quoted), 'a quote in a betrayal moment is about betrayal'
+
+
+def test_any_site_may_read_the_lore(client):
+    r = client.get('/health', headers={'origin': 'https://secret-game-gamma.vercel.app'})
+    assert r.headers.get('access-control-allow-origin') == '*'
