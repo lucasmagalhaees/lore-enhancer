@@ -13,6 +13,7 @@ create table if not exists fragment (
   text text not null,
   source text not null,
   source_date date,
+  lang text not null default 'pt',
   search tsvector generated always as (to_tsvector('portuguese', text)) stored,
   embedding vector(384),
   created_at timestamptz not null default now(),
@@ -20,6 +21,9 @@ create table if not exists fragment (
 );
 create index if not exists fragment_tags on fragment (campaign, kind, god, moment);
 create index if not exists fragment_search on fragment using gin (search);
+-- D7: for databases made before the lang column (idempotent)
+alter table fragment add column if not exists lang text not null default 'pt';
+create index if not exists fragment_lang on fragment (campaign, lang, kind);
 
 create table if not exists template (
   id bigint generated always as identity primary key,

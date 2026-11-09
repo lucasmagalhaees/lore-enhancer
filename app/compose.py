@@ -20,9 +20,15 @@ def tidy(text: str) -> str:
 def compose(store: Store, campaign: str, moment: str, god: str | None = None, seed: int | None = None, names: dict[str, str] | None = None) -> dict | None:
     rnd = random.Random(seed)
     tmpls = sorted(store.templates(campaign, moment), key=lambda t: t['text'])
-    if not tmpls:
-        return None
-    t = rnd.choice(tmpls)
+    rnd.shuffle(tmpls)
+    for t in tmpls:   # a template with a gap nothing fills gives way to the next one
+        out = _fill(store, rnd, t, campaign, moment, god, names)
+        if out:
+            return out
+    return None
+
+
+def _fill(store: Store, rnd: random.Random, t: dict, campaign: str, moment: str, god: str | None, names: dict[str, str] | None) -> dict | None:
     used: list[dict] = []
 
     def fill(m: re.Match) -> str:
@@ -36,6 +42,10 @@ def compose(store: Store, campaign: str, moment: str, god: str | None = None, se
         best = [r for r in pool if score(r) == top]
         if not best:
             return m.group(0)
+        if kind == 'trecho':   # a passage of a whole work: only one that fits this god or this moment
+            best = [r for r in best if score(r) > 0]
+            if not best:
+                return m.group(0)
         r = rnd.choice(best)
         used.append(r)
         return r['text']
