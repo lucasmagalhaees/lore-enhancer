@@ -1,0 +1,14 @@
+[
+ {"url": "https://www.gutenberg.org/cache/epub/62383/pg62383.txt", "campaign": "secret-cultist", "area": "biblia", "lang": "pt", "untagged_max": 0,
+  "source": "A Biblia Sagrada, tradução de João Ferreira de Almeida (edição do Project Gutenberg, nº 62383)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/32646/pg32646.txt", "campaign": "secret-cultist", "area": "literatura", "lang": "pt", "untagged_max": 150,
+  "source": "Teófilo Braga, Contos Phantasticos (Project Gutenberg, nº 32646)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/68283/pg68283.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "god": "cthulhu", "source": "H. P. Lovecraft, The Call of Cthulhu (1928, Project Gutenberg nº 68283)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/50133/pg50133.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "god": "yog", "source": "H. P. Lovecraft, The Dunwich Horror (1929, Project Gutenberg nº 50133)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/73181/pg73181.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "god": "dagon", "source": "H. P. Lovecraft, The Shadow over Innsmouth (1936, Project Gutenberg nº 73181)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/68236/pg68236.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "source": "H. P. Lovecraft, The Colour out of Space (1927, Project Gutenberg nº 68236)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/70652/pg70652.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "source": "H. P. Lovecraft, At the Mountains of Madness (1936, Project Gutenberg nº 70652)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/73233/pg73233.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "god": "nyarlathotep", "source": "H. P. Lovecraft, The Haunter of the Dark (1936, Project Gutenberg nº 73233)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/68553/pg68553.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "source": "H. P. Lovecraft, The Festival (1925, Project Gutenberg nº 68553)", "source_date": "2026-11-09"},
+ {"url": "https://www.gutenberg.org/cache/epub/72966/pg72966.txt", "campaign": "secret-cultist", "area": "cthulhu", "lang": "en", "source": "H. P. Lovecraft, The Horror at Red Hook (1927, Project Gutenberg nº 72966)", "source_date": "2026-11-09"}
+]

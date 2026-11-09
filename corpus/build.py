@@ -257,18 +257,18 @@ json.dump(F, open(OUT / 'fragments.json', 'w'), ensure_ascii=False, indent=1)
 
 # ---- templates per moment ------------------------------------------------------------------------------------------
 T = {
- 'abertura': ['“{citacao}” Foi assim que começou, em {lugar}.', 'O telegrama dizia só o endereço: {lugar}. Na mesa da entrada, {objeto}.', 'Vocês chegam a {lugar}. Logo na primeira noite, {pressagio}.', 'Ninguém quis vir até {lugar}, mas todos vieram. {pressagio}.', 'Alguém deixou {objeto} na porta de vocês. Num bilhete: “{sussurro}”.'],
+ 'abertura': ['Antes de vocês chegarem, alguém sublinhou num livro velho: “{trecho}”', '“{citacao}” Foi assim que começou, em {lugar}.', 'O telegrama dizia só o endereço: {lugar}. Na mesa da entrada, {objeto}.', 'Vocês chegam a {lugar}. Logo na primeira noite, {pressagio}.', 'Ninguém quis vir até {lugar}, mas todos vieram. {pressagio}.', 'Alguém deixou {objeto} na porta de vocês. Num bilhete: “{sussurro}”.'],
  'lei-L': ['{pres} e {chanc} acham a relíquia escondida junto com {objeto}. {reliquia}.', '{pres} e {chanc} voltam com mais um pedaço da Lança. {reliquia}.', 'Mais uma relíquia, trazida por {pres} e {chanc}. Lá fora, alguém para de cantar.', '{chanc} guarda a relíquia. Por uma noite, {lugar} fica em silêncio.'],
  'lei-F': ['A página que {pres} e {chanc} deixaram passar fala de {lugar}. Desde então, {pressagio}.', 'Sob {pres} e {chanc}, mais uma página foi lida. {pressagio}.', '{chanc} vira a página, e a tinta ainda está fresca. Alguém sussurra: “{sussurro}”.', 'Mais uma página do Necronomicon. Em {lugar}, {pressagio}.'],
  'rejeicao': ['“{citacao}” Ninguém diz em voz alta, mas todos pensam.', 'A mesa não confia em {pres} e {chanc}. Enquanto discutem, {pressagio}.', 'Governo recusado. Cada minuto perdido é um minuto a mais para o culto.'],
  'caos': ['Sem ninguém no comando, alguém pendura {objeto} na porta da prefeitura. “{sussurro}”.', 'Ninguém governa, e a cidade se governa sozinha. {pressagio}.', 'Sem governo, {objeto} passa de mão em mão até alguém ler o que não devia.'],
  'veto': ['O veto cai como uma pedra. Lá fora, alguém sussurra: “{sussurro}”.', '{pres} e {chanc} rasgam as duas folhas. Nem relíquia, nem página: só medo.'],
- 'investigacao': ['{pres} olha {target} nos olhos e lembra: “{citacao}”', '{pres} chama {target} para uma conversa a portas fechadas, em {lugar}. Só um dos dois sai sabendo a verdade.', '{pres} revira os papéis de {target} e acha {objeto}. O que isso quer dizer, só {pres} sabe.'],
- 'eliminacao': ['{target} cai. Alguém murmura: “{citacao}”', 'A cadeira de {target} fica vazia. {pressagio}.', '{pres} decide, e {target} não volta para a mesa. {pressagio}.', '{target} cai em {lugar}. Ninguém sabe ainda se a mesa ficou mais segura.'],
- 'ato2': ['A coisa ganha nome em {lugar}. Alguém achou {objeto}, e desde então {pressagio}.', 'A coisa toda fica pior. {pressagio}, e alguém escreveu na parede: “{sussurro}”.', '“{citacao}”'],
- 'ato3': ['Falta pouco. Em {lugar}, o culto já acende as velas. “{sussurro}”.', '“{citacao}” As palavras estão em todas as bocas.'],
+ 'investigacao': ['Nos papéis de {target}, uma frase marcada: “{trecho}”', '{pres} olha {target} nos olhos e lembra: “{citacao}”', '{pres} chama {target} para uma conversa a portas fechadas, em {lugar}. Só um dos dois sai sabendo a verdade.', '{pres} revira os papéis de {target} e acha {objeto}. O que isso quer dizer, só {pres} sabe.'],
+ 'eliminacao': ['Junto de {target}, um livro aberto: “{trecho}”', '{target} cai. Alguém murmura: “{citacao}”', 'A cadeira de {target} fica vazia. {pressagio}.', '{pres} decide, e {target} não volta para a mesa. {pressagio}.', '{target} cai em {lugar}. Ninguém sabe ainda se a mesa ficou mais segura.'],
+ 'ato2': ['Uma página solta, achada em {lugar}: “{trecho}”', 'A coisa ganha nome em {lugar}. Alguém achou {objeto}, e desde então {pressagio}.', 'A coisa toda fica pior. {pressagio}, e alguém escreveu na parede: “{sussurro}”.', '“{citacao}”'],
+ 'ato3': ['Alguém lê em voz alta, sem parar: “{trecho}”', 'Falta pouco. Em {lugar}, o culto já acende as velas. “{sussurro}”.', '“{citacao}” As palavras estão em todas as bocas.'],
  'fim-L': ['O culto se dispersa, e {objeto} fica para trás em {lugar}. Ninguém toca nele.', 'A última relíquia volta para o lugar. Em {lugar}, o silêncio dura até o amanhecer.', '“{citacao}” Desta vez, as trevas recuam.'],
- 'fim-F': ['“{citacao}”', 'O ritual termina em {lugar}. {pressagio}, e não vai parar mais.', 'A última página é lida em voz alta: “{sussurro}”.'],
+ 'fim-F': ['O último a sair lê o que ficou na parede: “{trecho}”', '“{citacao}”', 'O ritual termina em {lugar}. {pressagio}, e não vai parar mais.', 'A última página é lida em voz alta: “{sussurro}”.'],
 }
 json.dump([{'campaign': C, 'moment': m, 'text': t} for m, ts in T.items() for t in ts], open(OUT / 'templates.json', 'w'), ensure_ascii=False, indent=1)
 print(len(F), 'fragmentos,', sum(len(v) for v in T.values()), 'moldes')

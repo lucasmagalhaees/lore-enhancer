@@ -1,0 +1,21 @@
+# Whole public-domain works (corpus/sources.json) cut into passages and sent to Supabase. Runs when the list changes on
+# main, or by hand. Reads the environment lore-enhancer-envs, like the corpus ingestion.
+name: ingestão de obras
+on:
+  push:
+    branches: [main]
+    paths: ['corpus/sources.json', 'app/parse.py']
+  workflow_dispatch:
+jobs:
+  works:
+    runs-on: ubuntu-latest
+    environment: lore-enhancer-envs
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.13' }
+      - run: pip install -r requirements.txt
+      - run: python3 scripts/ingest_works.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}

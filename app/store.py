@@ -10,7 +10,7 @@ Row = dict
 class Store(Protocol):
     def add_fragments(self, rows: list[Row]) -> int: ...
     def add_templates(self, rows: list[Row]) -> int: ...
-    def fragments(self, campaign: str, kind: str | None = None, god: str | None = None, moment: str | None = None, q: str | None = None) -> list[Row]: ...
+    def fragments(self, campaign: str, kind: str | None = None, god: str | None = None, moment: str | None = None, q: str | None = None, lang: str | None = 'pt') -> list[Row]: ...
     def templates(self, campaign: str, moment: str) -> list[Row]: ...
 
 
@@ -36,8 +36,8 @@ class MemoryStore:
         self.tmpl += new
         return len(new)
 
-    def fragments(self, campaign, kind=None, god=None, moment=None, q=None):
-        out = [r for r in self.frag if r['campaign'] == campaign and _match(r, kind=kind, god=god, moment=moment)]
+    def fragments(self, campaign, kind=None, god=None, moment=None, q=None, lang='pt'):
+        out = [r for r in self.frag if r['campaign'] == campaign and _match(r, kind=kind, god=god, moment=moment) and (not lang or r.get('lang', 'pt') == lang)]
         return [r for r in out if not q or q.lower() in r['text'].lower()]
 
     def templates(self, campaign, moment):
@@ -66,8 +66,10 @@ class SupabaseStore:
     def add_templates(self, rows):
         return self._post('template', rows, 'campaign,moment,text')
 
-    def fragments(self, campaign, kind=None, god=None, moment=None, q=None):
-        p: dict[str, str] = {'campaign': f'eq.{campaign}', 'select': 'id,campaign,area,god,moment,kind,text,source', 'limit': '200'}
+    def fragments(self, campaign, kind=None, god=None, moment=None, q=None, lang='pt'):
+        p: dict[str, str] = {'campaign': f'eq.{campaign}', 'select': 'id,campaign,area,god,moment,kind,text,source,lang', 'limit': '200'}
+        if lang:
+            p['lang'] = f'eq.{lang}'
         if kind:
             p['kind'] = f'eq.{kind}'
         ors = [f'or=(god.eq.{god},god.is.null)' if god else '', f'or=(moment.eq.{moment},moment.is.null)' if moment else '']
@@ -75,6 +77,8 @@ class SupabaseStore:
             p['search'] = f'wfts(portuguese).{q}'
         url = f'{self.base}/fragment?' + '&'.join([f'{k}={v}' for k, v in p.items()] + [o for o in ors if o])
         r = httpx.get(url, headers=self.h, timeout=10)
+        if r.status_code == 400 and lang:   # a database from before the lang column (D7): ask without it
+            r = httpx.get(url.replace(f'&lang=eq.{lang}', '').replace(',lang', ''), headers=self.h, timeout=10)
         r.raise_for_status()
         return r.json()
 

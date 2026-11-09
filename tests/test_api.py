@@ -116,3 +116,47 @@ def test_a_quote_made_for_the_moment_beats_a_general_one(store):
 def test_any_site_may_read_the_lore(client):
     r = client.get('/health', headers={'origin': 'https://secret-game-gamma.vercel.app'})
     assert r.headers.get('access-control-allow-origin') == '*'
+
+
+# ---- D7: whole works ------------------------------------------------------------------------------------------------
+from app import parse
+
+WORK = (ROOT / 'tests/fixtures/obra_inventada.txt').read_text()
+
+
+def test_a_work_is_cut_into_tagged_passages_inside_the_gutenberg_wrapper():
+    ps = parse.passages(WORK)
+    assert not any('Gutenberg' in p or 'nunca' in p for p in ps), 'only between START and END'
+    assert not any(len(p) < parse.MIN for p in ps) and not any(p[:1].isdigit() for p in ps), 'no short lines, no verse numbers'
+    rows = parse.fragments(WORK, campaign='c', area='a', source='Obra Inventada (teste)', lang='pt', untagged_max=1)
+    by = {r['text'][:12]: (r['god'], r['moment']) for r in rows}
+    assert by['E o rei de B'] == ('marduque', None) and by['O traidor se'] == (None, 'investigacao')
+    assert by['No principio'] == (None, 'ato3'), 'trevas'
+    assert len(rows) == 4 and all(r['kind'] == 'trecho' and r['lang'] == 'pt' for r in rows), 'the tagged ones and one untagged'
+
+
+def test_ingest_url_needs_login_and_adds_the_passages(client, monkeypatch):
+    monkeypatch.setenv('SUPABASE_URL', 'https://exemplo.supabase.co'); monkeypatch.setenv('SUPABASE_PUBLISHABLE_KEY', 'pk')
+
+    class R:
+        def __init__(self, code, text=''): self.status_code, self.text = code, text
+        def json(self): return {'email': 'lucas@exemplo.com'}
+    body = {'url': 'https://www.gutenberg.org/cache/epub/1/pg1.txt', 'campaign': 'secret-cultist', 'area': 'biblia', 'source': 'Obra Inventada (teste)'}
+    assert client.post('/ingest/url', json=body).status_code == 401
+    monkeypatch.setattr(main.httpx, 'get', lambda url, **k: R(200, WORK) if 'gutenberg' in url else R(200))
+    out = client.post('/ingest/url', json=body, headers={'authorization': 'Bearer x'}).json()
+    assert out['passages'] == out['added'] >= 3
+    monkeypatch.setattr(main.httpx, 'get', lambda url, **k: R(404) if 'gutenberg' in url else R(200))
+    assert client.post('/ingest/url', json=body, headers={'authorization': 'Bearer x'}).status_code == 502
+    assert client.post('/ingest/url', json={**body, 'url': 'http://x'}, headers={'authorization': 'Bearer x'}).status_code == 422
+
+
+def test_a_passage_shows_up_only_where_it_fits_and_only_in_its_language(store):
+    store.add_fragments(parse.fragments(WORK, campaign='secret-cultist', area='biblia', source='Obra Inventada (teste)', lang='pt'))
+    store.add_fragments([{'campaign': 'secret-cultist', 'area': 'cthulhu', 'kind': 'trecho', 'text': 'An English passage about Babylon that must stay out of the Portuguese game.', 'source': 'x', 'lang': 'en', 'god': 'marduque', 'moment': None}])
+    lines = {compose(store, 'secret-cultist', 'abertura', 'marduque', seed=s)['text'] for s in range(60)}
+    quoted = [l for l in lines if 'livro velho' in l]
+    assert quoted and all('rei de Babel' in l for l in quoted), 'the passage of this god, in Portuguese'
+    assert not any('English' in l for l in lines)
+    assert all('livro velho' not in compose(store, 'secret-cultist', 'abertura', 'hydra', seed=s)['text'] for s in range(30)), 'no passage fits: another template'
+    assert store.fragments('secret-cultist', kind='trecho', lang='en')[0]['lang'] == 'en'

@@ -2,6 +2,11 @@
  {
   "campaign": "secret-cultist",
   "moment": "abertura",
+  "text": "Antes de vocês chegarem, alguém sublinhou num livro velho: “{trecho}”"
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "abertura",
   "text": "“{citacao}” Foi assim que começou, em {lugar}."
  },
  {
@@ -107,6 +112,11 @@
  {
   "campaign": "secret-cultist",
   "moment": "investigacao",
+  "text": "Nos papéis de {target}, uma frase marcada: “{trecho}”"
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "investigacao",
   "text": "{pres} olha {target} nos olhos e lembra: “{citacao}”"
  },
  {
@@ -118,6 +128,11 @@
   "campaign": "secret-cultist",
   "moment": "investigacao",
   "text": "{pres} revira os papéis de {target} e acha {objeto}. O que isso quer dizer, só {pres} sabe."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "eliminacao",
+  "text": "Junto de {target}, um livro aberto: “{trecho}”"
  },
  {
   "campaign": "secret-cultist",
@@ -142,6 +157,11 @@
  {
   "campaign": "secret-cultist",
   "moment": "ato2",
+  "text": "Uma página solta, achada em {lugar}: “{trecho}”"
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "ato2",
   "text": "A coisa ganha nome em {lugar}. Alguém achou {objeto}, e desde então {pressagio}."
  },
  {
@@ -153,6 +173,11 @@
   "campaign": "secret-cultist",
   "moment": "ato2",
   "text": "“{citacao}”"
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "ato3",
+  "text": "Alguém lê em voz alta, sem parar: “{trecho}”"
  },
  {
   "campaign": "secret-cultist",
@@ -178,6 +203,11 @@
   "campaign": "secret-cultist",
   "moment": "fim-L",
   "text": "“{citacao}” Desta vez, as trevas recuam."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "fim-F",
+  "text": "O último a sair lê o que ficou na parede: “{trecho}”"
  },
  {
   "campaign": "secret-cultist",
