@@ -98,3 +98,9 @@ def test_seed_sql_matches_the_corpus():
 def test_tidy_joins_prepositions_and_capitalizes():
     from app.compose import tidy
     assert tidy('vocês chegam a o porão. a relíquia brilha em uma noite de os mortos, a a beira') == 'Vocês chegam ao porão. A relíquia brilha numa noite dos mortos, à beira'
+
+
+def test_new_secret_keys_go_only_in_apikey():
+    from app.store import SupabaseStore
+    assert SupabaseStore('https://x.supabase.co', 'sb_secret_abc').h == {'apikey': 'sb_secret_abc'}
+    assert SupabaseStore('https://x.supabase.co', 'eyJlegacy').h['authorization'] == 'Bearer eyJlegacy'
