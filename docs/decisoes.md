@@ -14,8 +14,12 @@ Projeto `lore-enhancer` no Supabase (us-east-1), separado do 8 lados. Tabelas no
 
 ## D4. Corpus inicial (2026-11-09)
 
-245 trechos e 26 moldes, escritos e traduzidos aqui. Para cada um dos 21 deuses do Secret Cultist: 3 presságios, 2 lugares, 2 objetos e 2 sussurros. Mais trechos gerais e 34 citações de domínio público, em tradução própria: Lovecraft (morto em 1937, domínio público no Brasil desde 2008), Robert W. Chambers (1895), Algernon Blackwood (1910), a Bíblia King James (1611, com os apócrifos), o Enuma Elish (L. W. King, 1902), A Descida de Ishtar (R. W. Rogers, 1912) e a Goécia (Mathers, 1904). Fora: Clark Ashton Smith (protegido no Brasil até 2032), a Chaosium e o Derleth. Algumas citações estão marcadas como "adaptado" porque juntam ou encurtam o texto.
+245 trechos e 26 moldes (depois, D6), escritos e traduzidos aqui. Para cada um dos 21 deuses do Secret Cultist: 3 presságios, 2 lugares, 2 objetos e 2 sussurros. Mais trechos gerais e 34 citações de domínio público, em tradução própria: Lovecraft (morto em 1937, domínio público no Brasil desde 2008), Robert W. Chambers (1895), Algernon Blackwood (1910), a Bíblia King James (1611, com os apócrifos), o Enuma Elish (L. W. King, 1902), A Descida de Ishtar (R. W. Rogers, 1912) e a Goécia (Mathers, 1904). Fora: Clark Ashton Smith (protegido no Brasil até 2032), a Chaosium e o Derleth. Algumas citações estão marcadas como "adaptado" porque juntam ou encurtam o texto.
 
 ## D5. Ingestão (2026-11-09)
 
 Duas portas: `sql/seed.sql` (colar no SQL Editor, gerado do corpus) e o workflow `ingestão`, que manda o corpus ao Supabase a cada merge que muda `corpus/`. As duas ignoram o que já existe. O `POST /ingest` fica para quem quiser mandar texto avulso, com login do Supabase.
+
+## D6. Corpus maior (2026-11-09)
+
+Pedido: "enriqueça o máximo possível esse banco com fontes de domínio público". Agora são 434 trechos e 39 moldes. Cada deus ganhou mais 2 presságios, 1 lugar, 1 objeto e 1 sussurro. Há mais trechos gerais e relíquias, e 63 citações novas, sempre em tradução nossa: mais Lovecraft, Chambers, Ambrose Bierce (1886), Poe, Stoker, Mary Shelley, M. R. James, Shakespeare, Dante (Longfellow, 1867), Milton, o Livro de Enoque (R. H. Charles, 1912), mais King James e mais Goécia. Augusto dos Anjos (Eu, 1912) entra no original. Muitas citações têm momento (traição na rejeição e na investigação, morte na eliminação, Babilônia caída no fim), e o `compose` passa a preferir o que foi feito para o momento, depois o que é do deus, depois o geral. Só entrou o que eu sei citar com segurança; o resto fica para quando a ingestão buscar o texto na fonte.

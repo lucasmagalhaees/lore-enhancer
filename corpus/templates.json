@@ -2,6 +2,16 @@
  {
   "campaign": "secret-cultist",
   "moment": "abertura",
+  "text": "“{citacao}” Foi assim que começou, em {lugar}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "abertura",
+  "text": "O telegrama dizia só o endereço: {lugar}. Na mesa da entrada, {objeto}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "abertura",
   "text": "Vocês chegam a {lugar}. Logo na primeira noite, {pressagio}."
  },
  {
@@ -13,6 +23,11 @@
   "campaign": "secret-cultist",
   "moment": "abertura",
   "text": "Alguém deixou {objeto} na porta de vocês. Num bilhete: “{sussurro}”."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-L",
+  "text": "{pres} e {chanc} acham a relíquia escondida junto com {objeto}. {reliquia}."
  },
  {
   "campaign": "secret-cultist",
@@ -32,6 +47,11 @@
  {
   "campaign": "secret-cultist",
   "moment": "lei-F",
+  "text": "A página que {pres} e {chanc} deixaram passar fala de {lugar}. Desde então, {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "lei-F",
   "text": "Sob {pres} e {chanc}, mais uma página foi lida. {pressagio}."
  },
  {
@@ -47,12 +67,22 @@
  {
   "campaign": "secret-cultist",
   "moment": "rejeicao",
+  "text": "“{citacao}” Ninguém diz em voz alta, mas todos pensam."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "rejeicao",
   "text": "A mesa não confia em {pres} e {chanc}. Enquanto discutem, {pressagio}."
  },
  {
   "campaign": "secret-cultist",
   "moment": "rejeicao",
   "text": "Governo recusado. Cada minuto perdido é um minuto a mais para o culto."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "caos",
+  "text": "Sem ninguém no comando, alguém pendura {objeto} na porta da prefeitura. “{sussurro}”."
  },
  {
   "campaign": "secret-cultist",
@@ -67,7 +97,17 @@
  {
   "campaign": "secret-cultist",
   "moment": "veto",
+  "text": "O veto cai como uma pedra. Lá fora, alguém sussurra: “{sussurro}”."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "veto",
   "text": "{pres} e {chanc} rasgam as duas folhas. Nem relíquia, nem página: só medo."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "investigacao",
+  "text": "{pres} olha {target} nos olhos e lembra: “{citacao}”"
  },
  {
   "campaign": "secret-cultist",
@@ -82,12 +122,27 @@
  {
   "campaign": "secret-cultist",
   "moment": "eliminacao",
+  "text": "{target} cai. Alguém murmura: “{citacao}”"
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "eliminacao",
+  "text": "A cadeira de {target} fica vazia. {pressagio}."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "eliminacao",
   "text": "{pres} decide, e {target} não volta para a mesa. {pressagio}."
  },
  {
   "campaign": "secret-cultist",
   "moment": "eliminacao",
   "text": "{target} cai em {lugar}. Ninguém sabe ainda se a mesa ficou mais segura."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "ato2",
+  "text": "A coisa ganha nome em {lugar}. Alguém achou {objeto}, e desde então {pressagio}."
  },
  {
   "campaign": "secret-cultist",
@@ -112,12 +167,22 @@
  {
   "campaign": "secret-cultist",
   "moment": "fim-L",
+  "text": "O culto se dispersa, e {objeto} fica para trás em {lugar}. Ninguém toca nele."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "fim-L",
   "text": "A última relíquia volta para o lugar. Em {lugar}, o silêncio dura até o amanhecer."
  },
  {
   "campaign": "secret-cultist",
   "moment": "fim-L",
   "text": "“{citacao}” Desta vez, as trevas recuam."
+ },
+ {
+  "campaign": "secret-cultist",
+  "moment": "fim-F",
+  "text": "“{citacao}”"
  },
  {
   "campaign": "secret-cultist",

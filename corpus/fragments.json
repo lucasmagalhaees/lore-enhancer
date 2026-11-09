@@ -2448,5 +2448,1895 @@
   "god": "pazuzu",
   "moment": null,
   "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "as gaivotas voam em círculos sobre um ponto do mar onde não há nada",
+  "source": "lore-enhancer (original)",
+  "god": "cthulhu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "os sonhos de toda a cidade, esta noite, têm a mesma arquitetura errada",
+  "source": "lore-enhancer (original)",
+  "god": "cthulhu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "um farol apagado que ainda gira",
+  "source": "lore-enhancer (original)",
+  "god": "cthulhu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "uma pedra verde que sua água do mar",
+  "source": "lore-enhancer (original)",
+  "god": "cthulhu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "quando as estrelas estiverem certas",
+  "source": "lore-enhancer (original)",
+  "god": "cthulhu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "os cachorros fogem quando um certo homem passa",
+  "source": "lore-enhancer (original)",
+  "god": "nyarlathotep",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "um professor do Cairo dá aulas que ninguém lembra de ter assistido",
+  "source": "lore-enhancer (original)",
+  "god": "nyarlathotep",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "uma sala de cinema que só passa um filme",
+  "source": "lore-enhancer (original)",
+  "god": "nyarlathotep",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "uma máscara de faraó sem rosto atrás",
+  "source": "lore-enhancer (original)",
+  "god": "nyarlathotep",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "eu tenho mil formas e todas sorriem",
+  "source": "lore-enhancer (original)",
+  "god": "nyarlathotep",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "um ator esqueceu o próprio nome no meio da fala",
+  "source": "lore-enhancer (original)",
+  "god": "hastur",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "as estrelas do céu estão negras e brilham mesmo assim",
+  "source": "lore-enhancer (original)",
+  "god": "hastur",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "uma pensão de artistas com um quarto que não se aluga",
+  "source": "lore-enhancer (original)",
+  "god": "hastur",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "uma máscara pálida que não sai do rosto",
+  "source": "lore-enhancer (original)",
+  "god": "hastur",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "eu não uso máscara",
+  "source": "lore-enhancer (original)",
+  "god": "hastur",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "as vacas da fazenda deram cria todas na mesma noite",
+  "source": "lore-enhancer (original)",
+  "god": "shub",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "um cheiro de terra revirada e leite azedo",
+  "source": "lore-enhancer (original)",
+  "god": "shub",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "um bosque onde as árvores parecem ajoelhadas",
+  "source": "lore-enhancer (original)",
+  "god": "shub",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "um chifre de bode entalhado com rostos",
+  "source": "lore-enhancer (original)",
+  "god": "shub",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "mil filhotes, e nenhum se parece com a mãe",
+  "source": "lore-enhancer (original)",
+  "god": "shub",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "a porta do armário dá para um lugar que não é o armário",
+  "source": "lore-enhancer (original)",
+  "god": "yog",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "os gêmeos da fazenda vizinha não são gêmeos de verdade",
+  "source": "lore-enhancer (original)",
+  "god": "yog",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "uma casa de fazenda com as janelas pregadas por dentro",
+  "source": "lore-enhancer (original)",
+  "god": "yog",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "um anel com uma esfera iridescente",
+  "source": "lore-enhancer (original)",
+  "god": "yog",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "todos os tempos são um só",
+  "source": "lore-enhancer (original)",
+  "god": "yog",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "o padre da vila parou de rezar e começou a pescar",
+  "source": "lore-enhancer (original)",
+  "god": "dagon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "um sino toca debaixo da água",
+  "source": "lore-enhancer (original)",
+  "god": "dagon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "um salão da Ordem Esotérica de Dagon",
+  "source": "lore-enhancer (original)",
+  "god": "dagon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "uma estatueta de peixe com braços humanos",
+  "source": "lore-enhancer (original)",
+  "god": "dagon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "Iä! Iä! O Pai Dagon sobe!",
+  "source": "lore-enhancer (original)",
+  "god": "dagon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "as notas do piano soam fora do tempo, como se alguém tocasse com mãos demais",
+  "source": "lore-enhancer (original)",
+  "god": "azathoth",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "um relógio anda para trás e ninguém se espanta",
+  "source": "lore-enhancer (original)",
+  "god": "azathoth",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "uma sala de concertos vazia onde alguém ensaia",
+  "source": "lore-enhancer (original)",
+  "god": "azathoth",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "um tambor de pele que ninguém reconhece",
+  "source": "lore-enhancer (original)",
+  "god": "azathoth",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "os deuses dançam em volta dele sem saber por quê",
+  "source": "lore-enhancer (original)",
+  "god": "azathoth",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "um bocejo enorme ecoa da caverna",
+  "source": "lore-enhancer (original)",
+  "god": "tsathoggua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "os morcegos da mina saíram todos de uma vez",
+  "source": "lore-enhancer (original)",
+  "god": "tsathoggua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "um poço antigo com degraus que descem em espiral",
+  "source": "lore-enhancer (original)",
+  "god": "tsathoggua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "uma tigela de pedra com restos de oferenda",
+  "source": "lore-enhancer (original)",
+  "god": "tsathoggua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "ele tem fome só às vezes",
+  "source": "lore-enhancer (original)",
+  "god": "tsathoggua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "as árvores estão cobertas de gelo por dentro",
+  "source": "lore-enhancer (original)",
+  "god": "ithaqua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "alguém grita lá do alto, e a voz vai ficando mais fraca",
+  "source": "lore-enhancer (original)",
+  "god": "ithaqua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "um lago congelado com rachaduras em forma de pegada",
+  "source": "lore-enhancer (original)",
+  "god": "ithaqua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "um gorro de pele achado longe de qualquer casa",
+  "source": "lore-enhancer (original)",
+  "god": "ithaqua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "quem anda com o vento não volta a pisar no chão",
+  "source": "lore-enhancer (original)",
+  "god": "ithaqua",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "as brasas da lareira formam letras",
+  "source": "lore-enhancer (original)",
+  "god": "cthugha",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "as lâmpadas estouram uma por uma",
+  "source": "lore-enhancer (original)",
+  "god": "cthugha",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "uma fundição abandonada que ainda está quente",
+  "source": "lore-enhancer (original)",
+  "god": "cthugha",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "um isqueiro que acende com chama azul",
+  "source": "lore-enhancer (original)",
+  "god": "cthugha",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "tudo vira cinza, e a cinza também queima",
+  "source": "lore-enhancer (original)",
+  "god": "cthugha",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "os peixes do mercado olham para quem passa",
+  "source": "lore-enhancer (original)",
+  "god": "hydra",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "a água do poço sobe até a boca e para",
+  "source": "lore-enhancer (original)",
+  "god": "hydra",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "um cais de madeira apodrecida que ninguém usa",
+  "source": "lore-enhancer (original)",
+  "god": "hydra",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "um véu de rede de pesca",
+  "source": "lore-enhancer (original)",
+  "god": "hydra",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "todos os filhos voltam para a Mãe",
+  "source": "lore-enhancer (original)",
+  "god": "hydra",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "os rostos no lago sorriem antes de você",
+  "source": "lore-enhancer (original)",
+  "god": "glaaki",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "pressagio",
+  "text": "a vizinhança inteira parou de envelhecer",
+  "source": "lore-enhancer (original)",
+  "god": "glaaki",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "lugar",
+  "text": "uma casa de veraneio onde ninguém tem pressa de sair",
+  "source": "lore-enhancer (original)",
+  "god": "glaaki",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "objeto",
+  "text": "um volume de capa verde que dá sono",
+  "source": "lore-enhancer (original)",
+  "god": "glaaki",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "sussurro",
+  "text": "aqui ninguém chora",
+  "source": "lore-enhancer (original)",
+  "god": "glaaki",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "pressagio",
+  "text": "um touro escapou do curral e foi deitar no altar",
+  "source": "lore-enhancer (original)",
+  "god": "baal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "pressagio",
+  "text": "chove só em cima de uma casa",
+  "source": "lore-enhancer (original)",
+  "god": "baal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "lugar",
+  "text": "um campo de trigo queimado por raios em linha reta",
+  "source": "lore-enhancer (original)",
+  "god": "baal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "objeto",
+  "text": "um chifre de touro coberto de bronze",
+  "source": "lore-enhancer (original)",
+  "god": "baal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "sussurro",
+  "text": "dê a ele o primeiro e ele te dá a chuva",
+  "source": "lore-enhancer (original)",
+  "god": "baal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "pressagio",
+  "text": "os mendigos da praça sumiram, e com eles as dívidas",
+  "source": "lore-enhancer (original)",
+  "god": "mamon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "pressagio",
+  "text": "o cofre da igreja amanheceu cheio",
+  "source": "lore-enhancer (original)",
+  "god": "mamon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "lugar",
+  "text": "um escritório de penhores aberto à meia-noite",
+  "source": "lore-enhancer (original)",
+  "god": "mamon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "objeto",
+  "text": "uma balança que pesa almas",
+  "source": "lore-enhancer (original)",
+  "god": "mamon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "sussurro",
+  "text": "quanto você vale?",
+  "source": "lore-enhancer (original)",
+  "god": "mamon",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "pressagio",
+  "text": "o sino da escola não toca mais",
+  "source": "lore-enhancer (original)",
+  "god": "moloque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "pressagio",
+  "text": "cinzas caem do céu num dia sem incêndio",
+  "source": "lore-enhancer (original)",
+  "god": "moloque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "lugar",
+  "text": "um vale onde os pais deixam presentes que ninguém pega",
+  "source": "lore-enhancer (original)",
+  "god": "moloque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "objeto",
+  "text": "um carrinho de criança vazio na frente da fábrica",
+  "source": "lore-enhancer (original)",
+  "god": "moloque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "sussurro",
+  "text": "o fogo é um pai que não dorme",
+  "source": "lore-enhancer (original)",
+  "god": "moloque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "a cisterna da cidade virou salgada",
+  "source": "lore-enhancer (original)",
+  "god": "tiamat",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "serpentes aparecem nas pias",
+  "source": "lore-enhancer (original)",
+  "god": "tiamat",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "lugar",
+  "text": "um pântano onde a água doce e a salgada não se misturam",
+  "source": "lore-enhancer (original)",
+  "god": "tiamat",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "objeto",
+  "text": "um selo cilíndrico com um dragão de muitas cabeças",
+  "source": "lore-enhancer (original)",
+  "god": "tiamat",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "sussurro",
+  "text": "eu sou o mar antes do mundo",
+  "source": "lore-enhancer (original)",
+  "god": "tiamat",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "as crianças da casa falam com a voz de um velho",
+  "source": "lore-enhancer (original)",
+  "god": "pazuzu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "o vento sopra sempre do sudoeste",
+  "source": "lore-enhancer (original)",
+  "god": "pazuzu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "lugar",
+  "text": "um telhado onde ficam pendurados amuletos contra o vento",
+  "source": "lore-enhancer (original)",
+  "god": "pazuzu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "objeto",
+  "text": "uma placa de bronze com a cabeça do demônio",
+  "source": "lore-enhancer (original)",
+  "god": "pazuzu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "sussurro",
+  "text": "eu trago a peste e levo o que quero",
+  "source": "lore-enhancer (original)",
+  "god": "pazuzu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "as velas do velório se apagam todas juntas",
+  "source": "lore-enhancer (original)",
+  "god": "ereshkigal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "alguém bate na tampa de um caixão já enterrado",
+  "source": "lore-enhancer (original)",
+  "god": "ereshkigal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "lugar",
+  "text": "um porão de sete portas",
+  "source": "lore-enhancer (original)",
+  "god": "ereshkigal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "objeto",
+  "text": "uma balança de pesar mortos",
+  "source": "lore-enhancer (original)",
+  "god": "ereshkigal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "sussurro",
+  "text": "tire as suas joias, uma por portão",
+  "source": "lore-enhancer (original)",
+  "god": "ereshkigal",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "um dragão de tijolos azuis parece se mexer no muro",
+  "source": "lore-enhancer (original)",
+  "god": "marduque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "pressagio",
+  "text": "alguém trocou os nomes das ruas por nomes de deuses",
+  "source": "lore-enhancer (original)",
+  "god": "marduque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "lugar",
+  "text": "um zigurate de sete andares de tijolo cru",
+  "source": "lore-enhancer (original)",
+  "god": "marduque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "objeto",
+  "text": "uma lança de bronze com cabeça de dragão",
+  "source": "lore-enhancer (original)",
+  "god": "marduque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "babilonia",
+  "kind": "sussurro",
+  "text": "eu matei o caos e fiz o mundo, e posso desfazer",
+  "source": "lore-enhancer (original)",
+  "god": "marduque",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "pressagio",
+  "text": "as alianças de casamento ficam pretas",
+  "source": "lore-enhancer (original)",
+  "god": "asmodeu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "pressagio",
+  "text": "alguém ri do outro lado de todas as paredes",
+  "source": "lore-enhancer (original)",
+  "god": "asmodeu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "lugar",
+  "text": "um quarto de núpcias com sete camas",
+  "source": "lore-enhancer (original)",
+  "god": "asmodeu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "objeto",
+  "text": "um espelho que mostra o que você quer",
+  "source": "lore-enhancer (original)",
+  "god": "asmodeu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "sussurro",
+  "text": "você pode ter tudo, e só vai custar você",
+  "source": "lore-enhancer (original)",
+  "god": "asmodeu",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "pressagio",
+  "text": "os sinos da igreja tocam ao contrário",
+  "source": "lore-enhancer (original)",
+  "god": "astarote",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "pressagio",
+  "text": "cartas antigas aparecem respondidas",
+  "source": "lore-enhancer (original)",
+  "god": "astarote",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "lugar",
+  "text": "uma cela de convento com as paredes riscadas de nomes",
+  "source": "lore-enhancer (original)",
+  "god": "astarote",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "objeto",
+  "text": "uma lista com o nome de todos da mesa",
+  "source": "lore-enhancer (original)",
+  "god": "astarote",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "sussurro",
+  "text": "pergunte, e eu respondo a verdade",
+  "source": "lore-enhancer (original)",
+  "god": "astarote",
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "pressagio",
+  "text": "a lâmpada da rua pisca no ritmo de uma respiração",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "pressagio",
+  "text": "o espelho do corredor está virado para a parede",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "pressagio",
+  "text": "ninguém ouviu o galo cantar hoje",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "pressagio",
+  "text": "há terra de cemitério nos sapatos de alguém da mesa",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "pressagio",
+  "text": "uma criança desenhou vocês todos, e um está de túnica",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "pressagio",
+  "text": "a farmácia esgotou o láudano",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "pressagio",
+  "text": "o telegrafista da estação pediu demissão sem explicar",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "lugar",
+  "text": "a biblioteca municipal, depois de fechada",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "lugar",
+  "text": "o hospício no alto da colina",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "lugar",
+  "text": "o necrotério da delegacia",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "lugar",
+  "text": "uma igreja anglicana sem fiéis",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "lugar",
+  "text": "o porão da universidade",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "objeto",
+  "text": "um revólver com uma bala só",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "objeto",
+  "text": "uma fotografia com um rosto riscado",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "objeto",
+  "text": "um frasco de água benta pela metade",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "objeto",
+  "text": "um diário com as últimas páginas arrancadas",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "sussurro",
+  "text": "um de vocês já é nosso",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "sussurro",
+  "text": "conte de novo quantos são",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "geral",
+  "kind": "sussurro",
+  "text": "as velas já estão acesas",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "reliquia",
+  "text": "a Lança ainda tem sangue na ponta",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "reliquia",
+  "text": "a relíquia pesa mais nas mãos de quem mente",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "reliquia",
+  "text": "um sino toca longe quando a relíquia é tocada",
+  "source": "lore-enhancer (original)",
+  "god": null,
+  "moment": null,
+  "source_date": null
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Vivemos numa ilha plácida de ignorância, no meio de mares negros de infinito.",
+  "source": "H. P. Lovecraft, O Chamado de Cthulhu (1928)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "A oeste de Arkham as colinas se erguem selvagens, e há vales com matas fundas que nenhum machado jamais cortou.",
+  "source": "H. P. Lovecraft, A Cor que Caiu do Espaço (1927)",
+  "god": null,
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Infeliz é aquele a quem as lembranças da infância só trazem medo e tristeza.",
+  "source": "H. P. Lovecraft, O Estranho (1926)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Escrevo isto sob uma pressão mental considerável, pois esta noite já não existirei.",
+  "source": "H. P. Lovecraft, Dagon (1919)",
+  "god": "dagon",
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Quem procura o horror frequenta lugares estranhos e distantes.",
+  "source": "H. P. Lovecraft, A Imagem na Casa (1921)",
+  "god": null,
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Seu tolo, o Warren está MORTO!",
+  "source": "H. P. Lovecraft, O Depoimento de Randolph Carter (1920)",
+  "god": null,
+  "moment": "eliminacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Há na terra de Mnar um grande lago parado, que nenhum rio alimenta e de onde nenhum rio sai.",
+  "source": "H. P. Lovecraft, A Maldição que Caiu sobre Sarnath (1920)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Em Ulthar, que fica além do rio Skai, nenhum homem pode matar um gato.",
+  "source": "H. P. Lovecraft, Os Gatos de Ulthar (1920)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Ao longe, um latido fraco, como o de um cão gigantesco.",
+  "source": "H. P. Lovecraft, O Cão (1924, adaptado)",
+  "god": null,
+  "moment": "ato3",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Tekeli-li! Tekeli-li!",
+  "source": "H. P. Lovecraft, Nas Montanhas da Loucura (1936)",
+  "god": null,
+  "moment": "ato3",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Iä! Iä! Cthulhu fhtagn!",
+  "source": "H. P. Lovecraft, O Chamado de Cthulhu (1928)",
+  "god": "cthulhu",
+  "moment": "ato3",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Não sobre nós, ó Rei, não sobre nós!",
+  "source": "Robert W. Chambers, O Rei de Amarelo (1895)",
+  "god": "hastur",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "A canção que as Híades cantam, onde os farrapos do Rei esvoaçam, há de morrer sem ser ouvida na Carcosa sombria.",
+  "source": "Robert W. Chambers, O Rei de Amarelo (1895), Canção de Cassilda",
+  "god": "hastur",
+  "moment": "ato2",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "cthulhu",
+  "kind": "citacao",
+  "text": "Há muitos tipos de morte: em alguns o corpo fica; em outros ele some junto com o espírito.",
+  "source": "Ambrose Bierce, Um Habitante de Carcosa (1886)",
+  "god": "hastur",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "E as Trevas e a Ruína e a Morte Rubra tiveram domínio sem limite sobre todos.",
+  "source": "Edgar Allan Poe, A Máscara da Morte Rubra (1842)",
+  "god": null,
+  "moment": "eliminacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Disse o corvo: “Nunca mais.”",
+  "source": "Edgar Allan Poe, O Corvo (1845)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Tudo o que vemos ou parecemos não passa de um sonho dentro de um sonho.",
+  "source": "Edgar Allan Poe, Um Sonho dentro de um Sonho (1849)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Era a batida do seu coração horrendo!",
+  "source": "Edgar Allan Poe, O Coração Delator (1843)",
+  "god": null,
+  "moment": "investigacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Durante todo um dia escuro, sombrio e sem som, no outono do ano.",
+  "source": "Edgar Allan Poe, A Queda da Casa de Usher (1839)",
+  "god": null,
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Pelo amor de Deus, Montresor!",
+  "source": "Edgar Allan Poe, O Barril de Amontillado (1846)",
+  "god": null,
+  "moment": "eliminacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Bem-vindo à minha casa! Entre livremente, e por vontade própria!",
+  "source": "Bram Stoker, Drácula (1897)",
+  "god": null,
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Escutem, os filhos da noite. Que música eles fazem!",
+  "source": "Bram Stoker, Drácula (1897)",
+  "god": null,
+  "moment": "ato2",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Cuidado, pois não tenho medo, e por isso sou poderoso.",
+  "source": "Mary Shelley, Frankenstein (1818)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Quem é este que vem?",
+  "source": "M. R. James, Oh, Assobie e Eu Irei até Você (1904), a inscrição do apito",
+  "god": null,
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Pelo comichão dos meus polegares, algo malvado vem para cá.",
+  "source": "William Shakespeare, Macbeth (1623)",
+  "god": null,
+  "moment": "ato2",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Dobra, dobra, labuta e mágoa; queime o fogo e ferva a água.",
+  "source": "William Shakespeare, Macbeth (1623)",
+  "god": null,
+  "moment": "ato3",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Há mais coisas entre o céu e a terra, Horácio, do que sonha a sua filosofia.",
+  "source": "William Shakespeare, Hamlet (1603)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Agora é a hora mais enfeitiçada da noite, quando os cemitérios bocejam.",
+  "source": "William Shakespeare, Hamlet (1603)",
+  "god": null,
+  "moment": "ato3",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Há algo de podre no reino da Dinamarca.",
+  "source": "William Shakespeare, Hamlet (1603)",
+  "god": null,
+  "moment": "investigacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "No meio do caminho da nossa vida, eu me achei numa floresta escura.",
+  "source": "Dante Alighieri, Inferno, canto I (tradução de Longfellow, 1867)",
+  "god": null,
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Abandonai toda a esperança, vós que entrais.",
+  "source": "Dante Alighieri, Inferno, canto III (tradução de Longfellow, 1867)",
+  "god": null,
+  "moment": "fim-F",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Melhor reinar no Inferno do que servir no Céu.",
+  "source": "John Milton, O Paraíso Perdido (1667)",
+  "god": null,
+  "moment": "fim-F",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "A mente é o seu próprio lugar, e nela pode fazer do Inferno um Céu e do Céu um Inferno.",
+  "source": "John Milton, O Paraíso Perdido (1667)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "Vês?! Ninguém assistiu ao formidável enterro de tua última quimera.",
+  "source": "Augusto dos Anjos, Versos Íntimos, em Eu (1912)",
+  "god": null,
+  "moment": "eliminacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "literatura",
+  "kind": "citacao",
+  "text": "O beijo, amigo, é a véspera do escarro, a mão que afaga é a mesma que apedreja.",
+  "source": "Augusto dos Anjos, Versos Íntimos, em Eu (1912)",
+  "god": null,
+  "moment": "investigacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Guardai-vos dos falsos profetas, que vêm a vós vestidos de ovelhas, mas por dentro são lobos devoradores.",
+  "source": "Bíblia, Mateus 7:15 (King James, 1611)",
+  "god": null,
+  "moment": "investigacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "A mão daquele que me trai está comigo à mesa.",
+  "source": "Bíblia, Lucas 22:21 (King James, 1611)",
+  "god": null,
+  "moment": "rejeicao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Em verdade vos digo que um de vós me trairá.",
+  "source": "Bíblia, Mateus 26:21 (King James, 1611)",
+  "god": null,
+  "moment": "rejeicao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Quando ele falar com doçura, não acredites, porque há sete abominações no seu coração.",
+  "source": "Bíblia, Provérbios 26:25 (King James, 1611)",
+  "god": null,
+  "moment": "investigacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "O próprio Satanás se transfigura em anjo de luz.",
+  "source": "Bíblia, 2 Coríntios 11:14 (King James, 1611)",
+  "god": null,
+  "moment": "investigacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Até o meu amigo íntimo, em quem eu confiava, levantou contra mim o calcanhar.",
+  "source": "Bíblia, Salmos 41:9 (King James, 1611)",
+  "god": null,
+  "moment": "eliminacao",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Olhei, e eis um cavalo amarelo, e o que estava montado nele chamava-se Morte, e o Inferno o seguia.",
+  "source": "Bíblia, Apocalipse 6:8 (King James, 1611)",
+  "god": null,
+  "moment": "ato3",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "O vosso adversário, o diabo, anda em derredor, como leão que ruge, buscando a quem possa tragar.",
+  "source": "Bíblia, 1 Pedro 5:8 (King James, 1611)",
+  "god": null,
+  "moment": "ato2",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Também os demônios creem, e estremecem.",
+  "source": "Bíblia, Tiago 2:19 (King James, 1611)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "De rodear a terra, e de passear por ela.",
+  "source": "Bíblia, Jó 1:7 (King James, 1611)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Quem aumenta o conhecimento aumenta a dor.",
+  "source": "Bíblia, Eclesiastes 1:18 (King James, 1611)",
+  "god": "astarote",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "O amor ao dinheiro é a raiz de todos os males.",
+  "source": "Bíblia, 1 Timóteo 6:10 (King James, 1611)",
+  "god": "mamon",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Os príncipes dos filisteus se reuniram para oferecer um grande sacrifício a Dagom, o seu deus.",
+  "source": "Bíblia, Juízes 16:23 (King James, 1611)",
+  "god": "dagon",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Dagom estava caído com o rosto em terra diante da arca do Senhor.",
+  "source": "Bíblia, 1 Samuel 5:4 (King James, 1611)",
+  "god": "dagon",
+  "moment": "fim-L",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Ide e consultai Baal-Zebube, deus de Ecrom.",
+  "source": "Bíblia, 2 Reis 1:2 (King James, 1611)",
+  "god": "baal",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Edificaram os altos de Baal, para fazerem passar pelo fogo os seus filhos e as suas filhas a Moloque.",
+  "source": "Bíblia, Jeremias 32:35 (King James, 1611)",
+  "god": "moloque",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Naquele dia o Senhor castigará o leviatã, a serpente veloz, o dragão que está no mar.",
+  "source": "Bíblia, Isaías 27:1 (King James, 1611)",
+  "god": "hydra",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "As feras do deserto repousarão ali, e as suas casas se encherão de corujas, e os sátiros pularão ali.",
+  "source": "Bíblia, Isaías 13:21 (King James, 1611)",
+  "god": "marduque",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Caiu, caiu a grande Babilônia, e se tornou morada de demônios.",
+  "source": "Bíblia, Apocalipse 18:2 (King James, 1611)",
+  "god": "marduque",
+  "moment": "fim-L",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "MISTÉRIO, A GRANDE BABILÔNIA, A MÃE DAS PROSTITUIÇÕES E ABOMINAÇÕES DA TERRA.",
+  "source": "Bíblia, Apocalipse 17:5 (King James, 1611)",
+  "god": "marduque",
+  "moment": "ato3",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Apareceram uns dedos de mão de homem, e escreviam na parede do palácio do rei.",
+  "source": "Bíblia, Daniel 5:5 (King James, 1611)",
+  "god": "marduque",
+  "moment": "ato2",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "E a terra era sem forma e vazia.",
+  "source": "Bíblia, Gênesis 1:2 (King James, 1611)",
+  "god": null,
+  "moment": "abertura",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Revesti-vos de toda a armadura de Deus, para que possais estar firmes contra as ciladas do diabo.",
+  "source": "Bíblia, Efésios 6:11 (King James, 1611)",
+  "god": null,
+  "moment": "fim-L",
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Não terás outros deuses diante de mim.",
+  "source": "Bíblia, Êxodo 20:3 (King James, 1611)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "biblia",
+  "kind": "citacao",
+  "text": "Azazel ensinou os homens a fazer espadas e facas, escudos e couraças.",
+  "source": "Livro de Enoque 8:1 (tradução de R. H. Charles, 1912)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "citacao",
+  "text": "O primeiro espírito principal é um rei que governa no Oriente, chamado Bael.",
+  "source": "A Chave Menor de Salomão, Goécia (tradução de Mathers, 1904)",
+  "god": "baal",
+  "moment": null,
+  "source_date": "2026-11-09"
+ },
+ {
+  "campaign": "secret-cultist",
+  "area": "demonologia",
+  "kind": "citacao",
+  "text": "Belial foi criado logo depois de Lúcifer.",
+  "source": "A Chave Menor de Salomão, Goécia (adaptado da tradução de Mathers, 1904)",
+  "god": null,
+  "moment": null,
+  "source_date": "2026-11-09"
  }
 ]
