@@ -1,5 +1,5 @@
-# After a merge that changes the corpus, sends it to Supabase. Needs the repository secrets SUPABASE_URL and
-# SUPABASE_SECRET_KEY. Adding is idempotent: what is already there stays, only new text goes in.
+# After a merge that changes the corpus, sends it to Supabase. Reads the environment lore-enhancer-envs: the secrets
+# SUPABASE_URL and SUPABASE_SECRET_KEY. Adding is idempotent: what is already there stays, only new text goes in.
 name: ingestão
 on:
   push:
@@ -17,5 +17,5 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python3 scripts/ingest.py
         env:
-          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
