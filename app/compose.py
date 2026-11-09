@@ -30,8 +30,10 @@ def compose(store: Store, campaign: str, moment: str, god: str | None = None, se
         if names and kind in names:
             return names[kind]
         pool = sorted(store.fragments(campaign, kind=kind, god=god, moment=moment), key=lambda r: r['text'])
-        # prefer what belongs to this god and this moment, then the general ones
-        best = [r for r in pool if r.get('god') == god and god] or [r for r in pool if r.get('moment') == moment] or pool
+        # the closest fit wins: made for this moment (2), for this god (1); then the general ones
+        score = lambda r: 2 * (r.get('moment') == moment) + (bool(god) and r.get('god') == god)
+        top = max((score(r) for r in pool), default=0)
+        best = [r for r in pool if score(r) == top]
         if not best:
             return m.group(0)
         r = rnd.choice(best)

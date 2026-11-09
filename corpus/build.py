@@ -135,22 +135,140 @@ Q = [
 for area, god, text, src in Q:
     add(area, 'citacao', text, source=src, god=god, date=CHECK)
 
+
+# ---- D6: more for each god (omens, a place, an object, a whisper) ---------------------------------------------------
+MORE = {
+ 'cthulhu': (['as gaivotas voam em círculos sobre um ponto do mar onde não há nada', 'os sonhos de toda a cidade, esta noite, têm a mesma arquitetura errada'], 'um farol apagado que ainda gira', 'uma pedra verde que sua água do mar', 'quando as estrelas estiverem certas'),
+ 'nyarlathotep': (['os cachorros fogem quando um certo homem passa', 'um professor do Cairo dá aulas que ninguém lembra de ter assistido'], 'uma sala de cinema que só passa um filme', 'uma máscara de faraó sem rosto atrás', 'eu tenho mil formas e todas sorriem'),
+ 'hastur': (['um ator esqueceu o próprio nome no meio da fala', 'as estrelas do céu estão negras e brilham mesmo assim'], 'uma pensão de artistas com um quarto que não se aluga', 'uma máscara pálida que não sai do rosto', 'eu não uso máscara'),
+ 'shub': (['as vacas da fazenda deram cria todas na mesma noite', 'um cheiro de terra revirada e leite azedo'], 'um bosque onde as árvores parecem ajoelhadas', 'um chifre de bode entalhado com rostos', 'mil filhotes, e nenhum se parece com a mãe'),
+ 'yog': (['a porta do armário dá para um lugar que não é o armário', 'os gêmeos da fazenda vizinha não são gêmeos de verdade'], 'uma casa de fazenda com as janelas pregadas por dentro', 'um anel com uma esfera iridescente', 'todos os tempos são um só'),
+ 'dagon': (['o padre da vila parou de rezar e começou a pescar', 'um sino toca debaixo da água'], 'um salão da Ordem Esotérica de Dagon', 'uma estatueta de peixe com braços humanos', 'Iä! Iä! O Pai Dagon sobe!'),
+ 'azathoth': (['as notas do piano soam fora do tempo, como se alguém tocasse com mãos demais', 'um relógio anda para trás e ninguém se espanta'], 'uma sala de concertos vazia onde alguém ensaia', 'um tambor de pele que ninguém reconhece', 'os deuses dançam em volta dele sem saber por quê'),
+ 'tsathoggua': (['um bocejo enorme ecoa da caverna', 'os morcegos da mina saíram todos de uma vez'], 'um poço antigo com degraus que descem em espiral', 'uma tigela de pedra com restos de oferenda', 'ele tem fome só às vezes'),
+ 'ithaqua': (['as árvores estão cobertas de gelo por dentro', 'alguém grita lá do alto, e a voz vai ficando mais fraca'], 'um lago congelado com rachaduras em forma de pegada', 'um gorro de pele achado longe de qualquer casa', 'quem anda com o vento não volta a pisar no chão'),
+ 'cthugha': (['as brasas da lareira formam letras', 'as lâmpadas estouram uma por uma'], 'uma fundição abandonada que ainda está quente', 'um isqueiro que acende com chama azul', 'tudo vira cinza, e a cinza também queima'),
+ 'hydra': (['os peixes do mercado olham para quem passa', 'a água do poço sobe até a boca e para'], 'um cais de madeira apodrecida que ninguém usa', 'um véu de rede de pesca', 'todos os filhos voltam para a Mãe'),
+ 'glaaki': (['os rostos no lago sorriem antes de você', 'a vizinhança inteira parou de envelhecer'], 'uma casa de veraneio onde ninguém tem pressa de sair', 'um volume de capa verde que dá sono', 'aqui ninguém chora'),
+ 'baal': (['um touro escapou do curral e foi deitar no altar', 'chove só em cima de uma casa'], 'um campo de trigo queimado por raios em linha reta', 'um chifre de touro coberto de bronze', 'dê a ele o primeiro e ele te dá a chuva'),
+ 'mamon': (['os mendigos da praça sumiram, e com eles as dívidas', 'o cofre da igreja amanheceu cheio'], 'um escritório de penhores aberto à meia-noite', 'uma balança que pesa almas', 'quanto você vale?'),
+ 'moloque': (['o sino da escola não toca mais', 'cinzas caem do céu num dia sem incêndio'], 'um vale onde os pais deixam presentes que ninguém pega', 'um carrinho de criança vazio na frente da fábrica', 'o fogo é um pai que não dorme'),
+ 'tiamat': (['a cisterna da cidade virou salgada', 'serpentes aparecem nas pias'], 'um pântano onde a água doce e a salgada não se misturam', 'um selo cilíndrico com um dragão de muitas cabeças', 'eu sou o mar antes do mundo'),
+ 'pazuzu': (['as crianças da casa falam com a voz de um velho', 'o vento sopra sempre do sudoeste'], 'um telhado onde ficam pendurados amuletos contra o vento', 'uma placa de bronze com a cabeça do demônio', 'eu trago a peste e levo o que quero'),
+ 'ereshkigal': (['as velas do velório se apagam todas juntas', 'alguém bate na tampa de um caixão já enterrado'], 'um porão de sete portas', 'uma balança de pesar mortos', 'tire as suas joias, uma por portão'),
+ 'marduque': (['um dragão de tijolos azuis parece se mexer no muro', 'alguém trocou os nomes das ruas por nomes de deuses'], 'um zigurate de sete andares de tijolo cru', 'uma lança de bronze com cabeça de dragão', 'eu matei o caos e fiz o mundo, e posso desfazer'),
+ 'asmodeu': (['as alianças de casamento ficam pretas', 'alguém ri do outro lado de todas as paredes'], 'um quarto de núpcias com sete camas', 'um espelho que mostra o que você quer', 'você pode ter tudo, e só vai custar você'),
+ 'astarote': (['os sinos da igreja tocam ao contrário', 'cartas antigas aparecem respondidas'], 'uma cela de convento com as paredes riscadas de nomes', 'uma lista com o nome de todos da mesa', 'pergunte, e eu respondo a verdade'),
+}
+for god, (omens, place, obj, whisper) in MORE.items():
+    area = GODS[god][0]
+    for t in omens: add(area, 'pressagio', t, god=god)
+    add(area, 'lugar', place, god=god); add(area, 'objeto', obj, god=god); add(area, 'sussurro', whisper, god=god)
+
+for t in ['a lâmpada da rua pisca no ritmo de uma respiração', 'o espelho do corredor está virado para a parede', 'ninguém ouviu o galo cantar hoje', 'há terra de cemitério nos sapatos de alguém da mesa',
+          'uma criança desenhou vocês todos, e um está de túnica', 'a farmácia esgotou o láudano', 'o telegrafista da estação pediu demissão sem explicar']:
+    add('geral', 'pressagio', t)
+for t in ['a biblioteca municipal, depois de fechada', 'o hospício no alto da colina', 'o necrotério da delegacia', 'uma igreja anglicana sem fiéis', 'o porão da universidade']:
+    add('geral', 'lugar', t)
+for t in ['um revólver com uma bala só', 'uma fotografia com um rosto riscado', 'um frasco de água benta pela metade', 'um diário com as últimas páginas arrancadas']:
+    add('geral', 'objeto', t)
+for t in ['um de vocês já é nosso', 'conte de novo quantos são', 'as velas já estão acesas']:
+    add('geral', 'sussurro', t)
+for t in ['a Lança ainda tem sangue na ponta', 'a relíquia pesa mais nas mãos de quem mente', 'um sino toca longe quando a relíquia é tocada']:
+    add('biblia', 'reliquia', t)
+
+# ---- D6: more public-domain quotations (our own translation), tagged by god or by the moment they fit -------------
+Q2 = [
+ # Lovecraft (died 1937; public domain in Brazil since 2008)
+ ('cthulhu', None, None, 'Vivemos numa ilha plácida de ignorância, no meio de mares negros de infinito.', 'H. P. Lovecraft, O Chamado de Cthulhu (1928)'),
+ ('cthulhu', None, 'abertura', 'A oeste de Arkham as colinas se erguem selvagens, e há vales com matas fundas que nenhum machado jamais cortou.', 'H. P. Lovecraft, A Cor que Caiu do Espaço (1927)'),
+ ('cthulhu', None, None, 'Infeliz é aquele a quem as lembranças da infância só trazem medo e tristeza.', 'H. P. Lovecraft, O Estranho (1926)'),
+ ('cthulhu', 'dagon', 'abertura', 'Escrevo isto sob uma pressão mental considerável, pois esta noite já não existirei.', 'H. P. Lovecraft, Dagon (1919)'),
+ ('cthulhu', None, 'abertura', 'Quem procura o horror frequenta lugares estranhos e distantes.', 'H. P. Lovecraft, A Imagem na Casa (1921)'),
+ ('cthulhu', None, 'eliminacao', 'Seu tolo, o Warren está MORTO!', 'H. P. Lovecraft, O Depoimento de Randolph Carter (1920)'),
+ ('cthulhu', None, None, 'Há na terra de Mnar um grande lago parado, que nenhum rio alimenta e de onde nenhum rio sai.', 'H. P. Lovecraft, A Maldição que Caiu sobre Sarnath (1920)'),
+ ('cthulhu', None, None, 'Em Ulthar, que fica além do rio Skai, nenhum homem pode matar um gato.', 'H. P. Lovecraft, Os Gatos de Ulthar (1920)'),
+ ('cthulhu', None, 'ato3', 'Ao longe, um latido fraco, como o de um cão gigantesco.', 'H. P. Lovecraft, O Cão (1924, adaptado)'),
+ ('cthulhu', None, 'ato3', 'Tekeli-li! Tekeli-li!', 'H. P. Lovecraft, Nas Montanhas da Loucura (1936)'),
+ ('cthulhu', 'cthulhu', 'ato3', 'Iä! Iä! Cthulhu fhtagn!', 'H. P. Lovecraft, O Chamado de Cthulhu (1928)'),
+ # Robert W. Chambers (1895), Ambrose Bierce (1886)
+ ('cthulhu', 'hastur', None, 'Não sobre nós, ó Rei, não sobre nós!', 'Robert W. Chambers, O Rei de Amarelo (1895)'),
+ ('cthulhu', 'hastur', 'ato2', 'A canção que as Híades cantam, onde os farrapos do Rei esvoaçam, há de morrer sem ser ouvida na Carcosa sombria.', 'Robert W. Chambers, O Rei de Amarelo (1895), Canção de Cassilda'),
+ ('cthulhu', 'hastur', None, 'Há muitos tipos de morte: em alguns o corpo fica; em outros ele some junto com o espírito.', 'Ambrose Bierce, Um Habitante de Carcosa (1886)'),
+ # Poe (died 1849)
+ ('literatura', None, 'eliminacao', 'E as Trevas e a Ruína e a Morte Rubra tiveram domínio sem limite sobre todos.', 'Edgar Allan Poe, A Máscara da Morte Rubra (1842)'),
+ ('literatura', None, None, 'Disse o corvo: “Nunca mais.”', 'Edgar Allan Poe, O Corvo (1845)'),
+ ('literatura', None, None, 'Tudo o que vemos ou parecemos não passa de um sonho dentro de um sonho.', 'Edgar Allan Poe, Um Sonho dentro de um Sonho (1849)'),
+ ('literatura', None, 'investigacao', 'Era a batida do seu coração horrendo!', 'Edgar Allan Poe, O Coração Delator (1843)'),
+ ('literatura', None, 'abertura', 'Durante todo um dia escuro, sombrio e sem som, no outono do ano.', 'Edgar Allan Poe, A Queda da Casa de Usher (1839)'),
+ ('literatura', None, 'eliminacao', 'Pelo amor de Deus, Montresor!', 'Edgar Allan Poe, O Barril de Amontillado (1846)'),
+ # Stoker (1897), Mary Shelley (1818), M. R. James (1904)
+ ('literatura', None, 'abertura', 'Bem-vindo à minha casa! Entre livremente, e por vontade própria!', 'Bram Stoker, Drácula (1897)'),
+ ('literatura', None, 'ato2', 'Escutem, os filhos da noite. Que música eles fazem!', 'Bram Stoker, Drácula (1897)'),
+ ('literatura', None, None, 'Cuidado, pois não tenho medo, e por isso sou poderoso.', 'Mary Shelley, Frankenstein (1818)'),
+ ('literatura', None, 'abertura', 'Quem é este que vem?', 'M. R. James, Oh, Assobie e Eu Irei até Você (1904), a inscrição do apito'),
+ # Shakespeare, Dante (Longfellow, 1867), Milton (1667)
+ ('literatura', None, 'ato2', 'Pelo comichão dos meus polegares, algo malvado vem para cá.', 'William Shakespeare, Macbeth (1623)'),
+ ('literatura', None, 'ato3', 'Dobra, dobra, labuta e mágoa; queime o fogo e ferva a água.', 'William Shakespeare, Macbeth (1623)'),
+ ('literatura', None, None, 'Há mais coisas entre o céu e a terra, Horácio, do que sonha a sua filosofia.', 'William Shakespeare, Hamlet (1603)'),
+ ('literatura', None, 'ato3', 'Agora é a hora mais enfeitiçada da noite, quando os cemitérios bocejam.', 'William Shakespeare, Hamlet (1603)'),
+ ('literatura', None, 'investigacao', 'Há algo de podre no reino da Dinamarca.', 'William Shakespeare, Hamlet (1603)'),
+ ('literatura', None, 'abertura', 'No meio do caminho da nossa vida, eu me achei numa floresta escura.', 'Dante Alighieri, Inferno, canto I (tradução de Longfellow, 1867)'),
+ ('literatura', None, 'fim-F', 'Abandonai toda a esperança, vós que entrais.', 'Dante Alighieri, Inferno, canto III (tradução de Longfellow, 1867)'),
+ ('literatura', None, 'fim-F', 'Melhor reinar no Inferno do que servir no Céu.', 'John Milton, O Paraíso Perdido (1667)'),
+ ('literatura', None, None, 'A mente é o seu próprio lugar, e nela pode fazer do Inferno um Céu e do Céu um Inferno.', 'John Milton, O Paraíso Perdido (1667)'),
+ # Augusto dos Anjos (died 1914), in the original Portuguese
+ ('literatura', None, 'eliminacao', 'Vês?! Ninguém assistiu ao formidável enterro de tua última quimera.', 'Augusto dos Anjos, Versos Íntimos, em Eu (1912)'),
+ ('literatura', None, 'investigacao', 'O beijo, amigo, é a véspera do escarro, a mão que afaga é a mesma que apedreja.', 'Augusto dos Anjos, Versos Íntimos, em Eu (1912)'),
+ # The Bible, King James (1611)
+ ('biblia', None, 'investigacao', 'Guardai-vos dos falsos profetas, que vêm a vós vestidos de ovelhas, mas por dentro são lobos devoradores.', 'Bíblia, Mateus 7:15 (King James, 1611)'),
+ ('biblia', None, 'rejeicao', 'A mão daquele que me trai está comigo à mesa.', 'Bíblia, Lucas 22:21 (King James, 1611)'),
+ ('biblia', None, 'rejeicao', 'Em verdade vos digo que um de vós me trairá.', 'Bíblia, Mateus 26:21 (King James, 1611)'),
+ ('biblia', None, 'investigacao', 'Quando ele falar com doçura, não acredites, porque há sete abominações no seu coração.', 'Bíblia, Provérbios 26:25 (King James, 1611)'),
+ ('biblia', None, 'investigacao', 'O próprio Satanás se transfigura em anjo de luz.', 'Bíblia, 2 Coríntios 11:14 (King James, 1611)'),
+ ('biblia', None, 'eliminacao', 'Até o meu amigo íntimo, em quem eu confiava, levantou contra mim o calcanhar.', 'Bíblia, Salmos 41:9 (King James, 1611)'),
+ ('biblia', None, 'ato3', 'Olhei, e eis um cavalo amarelo, e o que estava montado nele chamava-se Morte, e o Inferno o seguia.', 'Bíblia, Apocalipse 6:8 (King James, 1611)'),
+ ('biblia', None, 'ato2', 'O vosso adversário, o diabo, anda em derredor, como leão que ruge, buscando a quem possa tragar.', 'Bíblia, 1 Pedro 5:8 (King James, 1611)'),
+ ('biblia', None, None, 'Também os demônios creem, e estremecem.', 'Bíblia, Tiago 2:19 (King James, 1611)'),
+ ('biblia', None, None, 'De rodear a terra, e de passear por ela.', 'Bíblia, Jó 1:7 (King James, 1611)'),
+ ('biblia', 'astarote', None, 'Quem aumenta o conhecimento aumenta a dor.', 'Bíblia, Eclesiastes 1:18 (King James, 1611)'),
+ ('biblia', 'mamon', None, 'O amor ao dinheiro é a raiz de todos os males.', 'Bíblia, 1 Timóteo 6:10 (King James, 1611)'),
+ ('biblia', 'dagon', None, 'Os príncipes dos filisteus se reuniram para oferecer um grande sacrifício a Dagom, o seu deus.', 'Bíblia, Juízes 16:23 (King James, 1611)'),
+ ('biblia', 'dagon', 'fim-L', 'Dagom estava caído com o rosto em terra diante da arca do Senhor.', 'Bíblia, 1 Samuel 5:4 (King James, 1611)'),
+ ('biblia', 'baal', None, 'Ide e consultai Baal-Zebube, deus de Ecrom.', 'Bíblia, 2 Reis 1:2 (King James, 1611)'),
+ ('biblia', 'moloque', None, 'Edificaram os altos de Baal, para fazerem passar pelo fogo os seus filhos e as suas filhas a Moloque.', 'Bíblia, Jeremias 32:35 (King James, 1611)'),
+ ('biblia', 'hydra', None, 'Naquele dia o Senhor castigará o leviatã, a serpente veloz, o dragão que está no mar.', 'Bíblia, Isaías 27:1 (King James, 1611)'),
+ ('biblia', 'marduque', None, 'As feras do deserto repousarão ali, e as suas casas se encherão de corujas, e os sátiros pularão ali.', 'Bíblia, Isaías 13:21 (King James, 1611)'),
+ ('biblia', 'marduque', 'fim-L', 'Caiu, caiu a grande Babilônia, e se tornou morada de demônios.', 'Bíblia, Apocalipse 18:2 (King James, 1611)'),
+ ('biblia', 'marduque', 'ato3', 'MISTÉRIO, A GRANDE BABILÔNIA, A MÃE DAS PROSTITUIÇÕES E ABOMINAÇÕES DA TERRA.', 'Bíblia, Apocalipse 17:5 (King James, 1611)'),
+ ('biblia', 'marduque', 'ato2', 'Apareceram uns dedos de mão de homem, e escreviam na parede do palácio do rei.', 'Bíblia, Daniel 5:5 (King James, 1611)'),
+ ('biblia', None, 'abertura', 'E a terra era sem forma e vazia.', 'Bíblia, Gênesis 1:2 (King James, 1611)'),
+ ('biblia', None, 'fim-L', 'Revesti-vos de toda a armadura de Deus, para que possais estar firmes contra as ciladas do diabo.', 'Bíblia, Efésios 6:11 (King James, 1611)'),
+ ('biblia', None, None, 'Não terás outros deuses diante de mim.', 'Bíblia, Êxodo 20:3 (King James, 1611)'),
+ ('biblia', None, None, 'Azazel ensinou os homens a fazer espadas e facas, escudos e couraças.', 'Livro de Enoque 8:1 (tradução de R. H. Charles, 1912)'),
+ # The Goetia (Mathers, 1904)
+ ('demonologia', 'baal', None, 'O primeiro espírito principal é um rei que governa no Oriente, chamado Bael.', 'A Chave Menor de Salomão, Goécia (tradução de Mathers, 1904)'),
+ ('demonologia', None, None, 'Belial foi criado logo depois de Lúcifer.', 'A Chave Menor de Salomão, Goécia (adaptado da tradução de Mathers, 1904)'),
+]
+for area, god, moment, text, src in Q2:
+    add(area, 'citacao', text, source=src, god=god, moment=moment, date=CHECK)
+
 json.dump(F, open(OUT / 'fragments.json', 'w'), ensure_ascii=False, indent=1)
 
 # ---- templates per moment ------------------------------------------------------------------------------------------
 T = {
- 'abertura': ['Vocês chegam a {lugar}. Logo na primeira noite, {pressagio}.', 'Ninguém quis vir até {lugar}, mas todos vieram. {pressagio}.', 'Alguém deixou {objeto} na porta de vocês. Num bilhete: “{sussurro}”.'],
- 'lei-L': ['{pres} e {chanc} voltam com mais um pedaço da Lança. {reliquia}.', 'Mais uma relíquia, trazida por {pres} e {chanc}. Lá fora, alguém para de cantar.', '{chanc} guarda a relíquia. Por uma noite, {lugar} fica em silêncio.'],
- 'lei-F': ['Sob {pres} e {chanc}, mais uma página foi lida. {pressagio}.', '{chanc} vira a página, e a tinta ainda está fresca. Alguém sussurra: “{sussurro}”.', 'Mais uma página do Necronomicon. Em {lugar}, {pressagio}.'],
- 'rejeicao': ['A mesa não confia em {pres} e {chanc}. Enquanto discutem, {pressagio}.', 'Governo recusado. Cada minuto perdido é um minuto a mais para o culto.'],
- 'caos': ['Ninguém governa, e a cidade se governa sozinha. {pressagio}.', 'Sem governo, {objeto} passa de mão em mão até alguém ler o que não devia.'],
- 'veto': ['{pres} e {chanc} rasgam as duas folhas. Nem relíquia, nem página: só medo.'],
- 'investigacao': ['{pres} chama {target} para uma conversa a portas fechadas, em {lugar}. Só um dos dois sai sabendo a verdade.', '{pres} revira os papéis de {target} e acha {objeto}. O que isso quer dizer, só {pres} sabe.'],
- 'eliminacao': ['{pres} decide, e {target} não volta para a mesa. {pressagio}.', '{target} cai em {lugar}. Ninguém sabe ainda se a mesa ficou mais segura.'],
- 'ato2': ['A coisa toda fica pior. {pressagio}, e alguém escreveu na parede: “{sussurro}”.', '“{citacao}”'],
+ 'abertura': ['“{citacao}” Foi assim que começou, em {lugar}.', 'O telegrama dizia só o endereço: {lugar}. Na mesa da entrada, {objeto}.', 'Vocês chegam a {lugar}. Logo na primeira noite, {pressagio}.', 'Ninguém quis vir até {lugar}, mas todos vieram. {pressagio}.', 'Alguém deixou {objeto} na porta de vocês. Num bilhete: “{sussurro}”.'],
+ 'lei-L': ['{pres} e {chanc} acham a relíquia escondida junto com {objeto}. {reliquia}.', '{pres} e {chanc} voltam com mais um pedaço da Lança. {reliquia}.', 'Mais uma relíquia, trazida por {pres} e {chanc}. Lá fora, alguém para de cantar.', '{chanc} guarda a relíquia. Por uma noite, {lugar} fica em silêncio.'],
+ 'lei-F': ['A página que {pres} e {chanc} deixaram passar fala de {lugar}. Desde então, {pressagio}.', 'Sob {pres} e {chanc}, mais uma página foi lida. {pressagio}.', '{chanc} vira a página, e a tinta ainda está fresca. Alguém sussurra: “{sussurro}”.', 'Mais uma página do Necronomicon. Em {lugar}, {pressagio}.'],
+ 'rejeicao': ['“{citacao}” Ninguém diz em voz alta, mas todos pensam.', 'A mesa não confia em {pres} e {chanc}. Enquanto discutem, {pressagio}.', 'Governo recusado. Cada minuto perdido é um minuto a mais para o culto.'],
+ 'caos': ['Sem ninguém no comando, alguém pendura {objeto} na porta da prefeitura. “{sussurro}”.', 'Ninguém governa, e a cidade se governa sozinha. {pressagio}.', 'Sem governo, {objeto} passa de mão em mão até alguém ler o que não devia.'],
+ 'veto': ['O veto cai como uma pedra. Lá fora, alguém sussurra: “{sussurro}”.', '{pres} e {chanc} rasgam as duas folhas. Nem relíquia, nem página: só medo.'],
+ 'investigacao': ['{pres} olha {target} nos olhos e lembra: “{citacao}”', '{pres} chama {target} para uma conversa a portas fechadas, em {lugar}. Só um dos dois sai sabendo a verdade.', '{pres} revira os papéis de {target} e acha {objeto}. O que isso quer dizer, só {pres} sabe.'],
+ 'eliminacao': ['{target} cai. Alguém murmura: “{citacao}”', 'A cadeira de {target} fica vazia. {pressagio}.', '{pres} decide, e {target} não volta para a mesa. {pressagio}.', '{target} cai em {lugar}. Ninguém sabe ainda se a mesa ficou mais segura.'],
+ 'ato2': ['A coisa ganha nome em {lugar}. Alguém achou {objeto}, e desde então {pressagio}.', 'A coisa toda fica pior. {pressagio}, e alguém escreveu na parede: “{sussurro}”.', '“{citacao}”'],
  'ato3': ['Falta pouco. Em {lugar}, o culto já acende as velas. “{sussurro}”.', '“{citacao}” As palavras estão em todas as bocas.'],
- 'fim-L': ['A última relíquia volta para o lugar. Em {lugar}, o silêncio dura até o amanhecer.', '“{citacao}” Desta vez, as trevas recuam.'],
- 'fim-F': ['O ritual termina em {lugar}. {pressagio}, e não vai parar mais.', 'A última página é lida em voz alta: “{sussurro}”.'],
+ 'fim-L': ['O culto se dispersa, e {objeto} fica para trás em {lugar}. Ninguém toca nele.', 'A última relíquia volta para o lugar. Em {lugar}, o silêncio dura até o amanhecer.', '“{citacao}” Desta vez, as trevas recuam.'],
+ 'fim-F': ['“{citacao}”', 'O ritual termina em {lugar}. {pressagio}, e não vai parar mais.', 'A última página é lida em voz alta: “{sussurro}”.'],
 }
 json.dump([{'campaign': C, 'moment': m, 'text': t} for m, ts in T.items() for t in ts], open(OUT / 'templates.json', 'w'), ensure_ascii=False, indent=1)
 print(len(F), 'fragmentos,', sum(len(v) for v in T.values()), 'moldes')

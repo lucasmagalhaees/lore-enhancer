@@ -71,7 +71,7 @@ def test_lore_and_fragments(client):
     assert client.get('/lore', params={'campaign': 'secret-cultist', 'moment': 'nada'}).status_code == 404
     got = client.get('/fragments', params={'campaign': 'secret-cultist', 'kind': 'citacao', 'god': 'marduque'}).json()
     assert got and all(f['god'] in ('marduque', None) for f in got)
-    assert all('Babil' in f['text'] for f in client.get('/fragments', params={'campaign': 'secret-cultist', 'q': 'babil'}).json())
+    assert all('babil' in f['text'].lower() for f in client.get('/fragments', params={'campaign': 'secret-cultist', 'q': 'babil'}).json())
 
 
 def test_ingest_needs_a_supabase_login(client, monkeypatch):
@@ -104,3 +104,10 @@ def test_new_secret_keys_go_only_in_apikey():
     from app.store import SupabaseStore
     assert SupabaseStore('https://x.supabase.co', 'sb_secret_abc').h == {'apikey': 'sb_secret_abc'}
     assert SupabaseStore('https://x.supabase.co', 'eyJlegacy').h['authorization'] == 'Bearer eyJlegacy'
+
+
+def test_a_quote_made_for_the_moment_beats_a_general_one(store):
+    out = compose(store, 'secret-cultist', 'rejeicao', 'cthulhu', seed=0, names=NAMES)
+    lines = {compose(store, 'secret-cultist', 'rejeicao', 'cthulhu', seed=s, names=NAMES)['text'] for s in range(30)}
+    quoted = [l for l in lines if l.startswith('“')]
+    assert out and quoted and all(('trai' in l) for l in quoted), 'a quote in a betrayal moment is about betrayal'
