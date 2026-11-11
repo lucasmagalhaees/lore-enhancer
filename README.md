@@ -11,7 +11,7 @@ Momentos: `abertura`, `lei-L`, `lei-F`, `rejeicao`, `caos`, `veto`, `investigaca
 
 ## Subir
 
-1. Supabase, SQL Editor: rodar `sql/schema.sql` e depois `sql/seed.sql` (rodar o `schema.sql` de novo sempre que ele mudar: é idempotente).
+1. Supabase, SQL Editor: rodar as migrações de `sql/migrations/` em ordem e depois `sql/seed.sql` (rodar de novo as migrações sempre que entrar uma nova: é idempotente).
 2. Vercel: importar o repo e pôr `SUPABASE_URL`, `SUPABASE_SECRET_KEY` e `SUPABASE_PUBLISHABLE_KEY`.
 3. GitHub, Settings → Secrets → Actions: `SUPABASE_URL` e `SUPABASE_SECRET_KEY`, para o workflow `ingestão` mandar o corpus novo a cada merge.
 

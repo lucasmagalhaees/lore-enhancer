@@ -27,3 +27,7 @@ Pedido: "enriqueça o máximo possível esse banco com fontes de domínio públi
 ## D7. Obras inteiras (2026-11-09)
 
 Pedido: ingerir obras completas e o Python fazer o parse. Em vez de PDF, entra o texto puro do Project Gutenberg, que é mais limpo e não passa pelo limite de upload do Vercel. O `app/parse.py` corta a obra em frases e etiqueta deus e momento por palavras-chave. Entram todos os trechos etiquetados e só uma amostra dos outros (`untagged_max`), para a obra não afogar o resto. O tipo é `trecho`, e os moldes com `{trecho}` só usam um que combine com o deus ou o momento; se nenhum combinar, vale outro molde. Coluna nova `lang`: sem modelo não há tradução, então as obras em inglês (Lovecraft) entram como `en` e ficam fora do jogo em português. No jogo entram a Bíblia de Almeida (Gutenberg nº 62383) e os Contos Phantasticos de Teófilo Braga (nº 32646). Dois caminhos: o `POST /ingest/url` para uma obra avulsa e o workflow `ingestão de obras`, que roda o `corpus/sources.json`. Não foi testado contra os textos reais, porque o Gutenberg não abre daqui; o primeiro run do workflow mostra quantos trechos e de quais deuses saíram de cada obra.
+
+## D8. Migrações numeradas e um mapa do Supabase (2026-11-11)
+
+O mesmo projeto do Supabase serve a lore e o login do Secret Cultist. O `sql/schema.sql` virou `sql/migrations/001_lore.sql`, a parte do jogo entrou como `002_game_auth.sql`, e `docs/supabase.md` diz qual app usa qual tabela e qual chave. Tabela nova entra como migração nova.
