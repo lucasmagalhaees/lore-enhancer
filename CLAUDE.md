@@ -24,7 +24,7 @@ Idioma: respostas e textos em português do Brasil, informal. Comentários no c�
 | `corpus/sources.json` | As obras inteiras de domínio público para ingerir (URL do texto puro, fonte, área, língua) |
 | `scripts/ingest_works.py` | Baixa e ingere as obras de `sources.json`; roda no workflow `ingestão de obras` (`--dry` não grava) |
 | `scripts/ingest.py` | Manda o corpus ao Supabase; roda no workflow `ingestão` depois do merge |
-| `sql/schema.sql` | Tabelas `fragment` e `template`, busca de texto em português, coluna `embedding` vazia |
+| `sql/migrations/` | Migrações numeradas: `001_lore.sql` (tabelas `fragment` e `template`, busca em português, `embedding` vazia) e `002_game_auth.sql` (login do jogo); o que é de quem em `docs/supabase.md` |
 
 ## Regras do corpus
 
